@@ -10,6 +10,25 @@ public class Valuta {
 	private double kupovniKurs;
 	private double srednjiKurs;
 	
+	public Valuta() {
+		
+	}
+	
+	public Valuta(String naziv, String skracenica, GregorianCalendar datum) {
+		this.setNaziv(naziv);
+		this.setSkracenica(skracenica);
+		this.setDatum(datum);
+	}
+	
+	public Valuta(String naziv, String skracenica, GregorianCalendar datum, double prodajniKurs, double kupovniKurs, double srednjiKurs) {
+		this.setNaziv(naziv);
+		this.setSkracenica(skracenica);
+		this.setDatum(datum);
+		this.setKupovniKurs(kupovniKurs);
+		this.setProdajniKurs(prodajniKurs);
+		this.setSrednjiKurs(srednjiKurs);
+	}
+	
 	public String getNaziv() {
 		return naziv;
 	}
